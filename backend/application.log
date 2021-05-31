@@ -1,0 +1,26 @@
+[ERROR] connectin error: Unknown database 'autoberlesx'
+[ERROR] query error: 
+[ERROR] query error: Query was empty
+[ERROR] query error: Query was empty
+[ERROR] query error: Unknown column 'autoId' in 'field list'
+[ERROR] query error: Unknown column 'autoId' in 'field list'
+[ERROR] query error: Unknown column 'autoId' in 'field list'
+[ERROR] query error: Unknown column 'autoId' in 'field list'
+[ERROR] query error: Table 'bolt.autok' doesn't exist
+[ERROR] query error: Table 'bolt.berlok' doesn't exist
+[ERROR] query error: Table 'bolt.berlok' doesn't exist
+[ERROR] query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '%?%' at line 1
+[ERROR] query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '%?%' at line 1
+[ERROR] query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '%?%' at line 1
+[ERROR] query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '%?%' at line 1
+[ERROR] query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '%?%' at line 1
+[ERROR] query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '%?%' at line 1
+[ERROR] query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '%?%' at line 1
+[ERROR] query error: Table 'bolt.termekek' doesn't exist
+[ERROR] query error: Table 'bolt.termekek' doesn't exist
+[ERROR] query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE id = ?' at line 11
+[ERROR] query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE id = ?' at line 14
+[ERROR] query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '?%'' at line 3
+[ERROR] query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 3
+[ERROR] query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 3
+[ERROR] query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 3
