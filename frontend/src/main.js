@@ -24,7 +24,7 @@ Vue.config.productionTip = false
 Vue.mixin({
     data(){
         return{
-            url: "http://localhost/Bolt/backend/backend.php"
+            url: "http://localhost/Bolt/Finished/MesterMunka/backend/backend.php"
         }
     }
 });
