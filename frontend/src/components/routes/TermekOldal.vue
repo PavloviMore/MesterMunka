@@ -4,7 +4,7 @@
   <div>
     <div class="row">
         <!-- kép/cím -->
-        <div class="col-sm-12 col-md-6">
+        <div class="col-sm-12 col-md-5 m-3">
           <h2 class="text-truncate">{{row.termekNev}}</h2>
           <img
             src="../../assets/test.jpg"
@@ -14,7 +14,7 @@
         <!-- kép/cím -->
 
         <!-- Info-->
-        <div class="col-sm-12 col-md-6 float-end">
+        <div class="col-sm-11 col-md-6 p-2 float-end">
           <ul>
             <h2>Ár: {{row.egysegArNetto}} Ft</h2>
             <li class="">Leiras: {{row.leiras}}</li>
