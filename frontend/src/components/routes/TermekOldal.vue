@@ -7,7 +7,7 @@
         <div class="col-sm-12 col-md-5 m-3">
           <h2 class="text-truncate">{{row.termekNev}}</h2>
           <img
-            src="../../assets/test.jpg"
+            :src="row.foto"
             alt=""
           >
         </div>
