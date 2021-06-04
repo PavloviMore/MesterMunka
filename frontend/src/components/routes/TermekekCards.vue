@@ -12,7 +12,9 @@
                 </h5>
               </router-link>
               <router-link :to="`/termekOldal/${termek.id}`">
-                <img class="card-img-top my-img" src="@/assets/test.jpg" />
+                <img class="card-img-top my-img img-thumbnail" :src="Img(termek.foto)"/>
+                <!-- <img class="card-img-top my-img" src="../../assets/test.jpg"/> -->
+                <!-- src="../../assets/yankee_dh_30.jpg" -->
               </router-link>
               <p class="card-text">
                 {{
@@ -60,7 +62,6 @@ export default {
         .then((res) => {
           this.resDate = res.data;
           this.TermekekRows = res.data.rows;
-          /*console.log(this.columns);*/
         })
         .catch((error) => {
           console.log(error);
@@ -81,9 +82,14 @@ export default {
           console.log(error);
         });
     },
-    ReadTermekek() {
-      // console.log("Terméknév = " + this.Termekek[0].termekNev);
-      // console.log("Ár = " + this.Termekek[0].egysegArNetto);
+    Img(foto){
+      try {
+        return require("../../assets/" + foto);
+        
+      } catch (error) {
+        return require("../../assets/test.jpg")
+        
+      }
     },
   },
 };
@@ -103,5 +109,9 @@ export default {
 
 .none {
   display: none;
+}
+
+.my-img{
+  height: 250px;
 }
 </style>

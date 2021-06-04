@@ -7,8 +7,9 @@
         <div class="col-sm-12 col-md-5 m-3">
           <h2 class="text-truncate">{{row.termekNev}}</h2>
           <img
-            :src="row.foto"
+            :src="Img(row.foto)"
             alt=""
+            class="img-thumbnail img"
           >
         </div>
         <!-- kép/cím -->
@@ -90,6 +91,15 @@ export default {
         console.log(error);
       })
     },
+    Img(foto){
+      try {
+        return require("../../assets/" + foto);
+        
+      } catch (error) {
+        return require("../../assets/test.jpg")
+        
+      }
+    },
     getHarmadlagosKategoriak(){
       axios
         .get(this.url,{
@@ -111,5 +121,9 @@ export default {
 <style>
 h2{
   width: 488px;
+}
+
+.img{
+  height:380px;
 }
 </style>
