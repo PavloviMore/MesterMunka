@@ -61,7 +61,9 @@ export default {
     return{
       queryGetRecodByID: "termekRecordByID",
       queryGetHarmadlagoskategoria: "harmadlagosKategoriaTabla",
+      queryGetTulajdosagok: "tulajdonsagokTabla",
       HarmadlagosKategoriaRows:[],
+      AFA:null,
       kategoria: null,
       row: new Termek(),
     };
@@ -69,6 +71,7 @@ export default {
   created(){
     this.getData()
     this.getHarmadlagosKategoriak();
+    this.getAfa();
   },
   methods:{
     getData(){
@@ -89,6 +92,20 @@ export default {
       .catch((error) => {
         console.log(error);
       })
+    },
+    getAfa(){
+      axios
+        .get(this.url, {
+          params: {
+            query: this.queryGetTulajdosagok,
+          },
+        })
+        .then((res) => {
+          this.AFA = res.data.rows[0].AFA;
+        })
+        .catch((error) => {
+          console.log(error);
+        });
     },
     Img(foto){
       try {
