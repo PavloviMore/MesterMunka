@@ -82,10 +82,9 @@ export default {
       })
       .then((res) => {
         if(res.data.rows.lenght == 0){
-          this.$route.push("/error/");
+          this.$route.push("/termekSzures/");
         }
         this.row = res.data.rows[0];
-        // console.log(this.row);
       })
       .catch((error) => {
         console.log(error);
