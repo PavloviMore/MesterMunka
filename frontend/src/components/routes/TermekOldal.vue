@@ -17,7 +17,7 @@
         <!-- Info-->
         <div class="col-sm-11 col-md-6 p-2 float-end">
           <ul>
-            <h2>Ár: {{row.egysegArNetto}} Ft</h2>
+            <h2>Ár: {{Number(row.egysegArNetto * (1 + AFA)).toLocaleString()}} Ft</h2>
             <li class="">Leiras: {{row.leiras}}</li>
             <li>
               Kategoria: {{HarmadlagosKategoriaRows.length != 0 ? HarmadlagosKategoriaRows.find(kategoria => kategoria.id == row.kategoria).harmadlagosKategoriaNev : "0"}}
