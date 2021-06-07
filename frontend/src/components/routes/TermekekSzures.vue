@@ -159,8 +159,6 @@ export default {
       markaRows: [],
       filter: new Filter(),
       hiba:null,
-      MinAr:null,
-      MaxAr:null,
       AFA: null,
       FoKategoriaRows: [],
       MasodlagosKategoriaRows: [],
@@ -181,7 +179,6 @@ export default {
     this.getMasodlagosKategoriak();
     this.getHarmadlagosKategoriak();
     this.getMarka();
-    this.getArAdatok();
     this.filter = new Filter();
   },
   methods: {
@@ -203,19 +200,10 @@ export default {
             this.TermekekColumns = res.data.columns;
             this.TermekekRows = res.data.rows;
           }
-          // console.log(this.TermekekColumns);
-          // console.log("Terméknév = " + this.filter.termekNev);
-          // console.log("Ár = " + this.filter.egysegArNetto);
-          // console.log(this.hiba);
         })
         .catch((error) => {
           console.log(error);
         });
-        // console.log(this.filter.egysegArNetto);
-    },
-    getArAdatok(){
-      this.MinAr = Math.min(this.TermekekRows.egysegNettoAr);
-      // console.log(this.MinAr);
     },
     AllData(){
       axios
@@ -228,7 +216,6 @@ export default {
           console.log(res.data);
           this.resDate = res.data;
           this.TermekekRows = res.data.rows;
-          /*console.log(this.columns);*/
         })
         .catch((error) => {
           console.log(error);
@@ -258,7 +245,6 @@ export default {
         })
         .then((res) => {
           this.FoKategoriaRows = res.data.rows;
-          // console.log(this.FoKategoriaRows);
         })
         .catch((error) => {
           console.log(error);
@@ -301,7 +287,6 @@ export default {
         })
         .then((res) => {
           this.markaRows = res.data.rows;
-          // console.log(this.markaRows);
         })
         .catch((error) => {
           console.log(error);
@@ -310,28 +295,6 @@ export default {
     getFiltered(){
       this.getData();
     },
-
-
-
-    // getTesztCards() {
-    //   axios
-    //     .get(this.url, {
-    //       params: {
-    //         query: this.queryGetTermekByNev,
-    //         termekNev: this.termekNev,
-    //       },
-    //     })
-    //     .then((res) => {
-    //       this.resDate = res.data;
-    //       this.TermekekColumns = res.data.columns;
-    //       this.TermekekRows = res.data.rows;
-    //       // console.log(this.rows);
-    //       this.getData();
-    //     })
-    //     .catch((error) => {
-    //       console.log(error);
-    //     });
-    // },
   },
 };
 </script>

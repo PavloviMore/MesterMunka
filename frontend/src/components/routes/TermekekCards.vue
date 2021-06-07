@@ -48,7 +48,6 @@ export default {
   created() {
     this.getData();
     this.getAfa();
-    this.ReadTermekek();
   },
   methods: {
     // Adatok
