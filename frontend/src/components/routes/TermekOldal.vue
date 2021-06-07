@@ -3,9 +3,13 @@
   <!-- Termék -->
   <div>
     <div class="row">
+        <!-- Üres block -->
+        <div class="col-1">
+        </div>
+        <!-- Üres block -->
         <!-- kép/cím -->
-        <div class="col-sm-12 col-md-5 m-3">
-          <h2 class="text-truncate">{{row.termekNev}}</h2>
+        <div class="col-sm-12 col-md-5 m-3 p-1">
+          <h2 class="text-truncate w-100">{{row.termekNev}}</h2>
           <img
             :src="Img(row.foto)"
             alt=""
@@ -15,7 +19,7 @@
         <!-- kép/cím -->
 
         <!-- Info-->
-        <div class="col-sm-11 col-md-6 p-2 float-end">
+        <div class="col-sm-11 col-md-4 p-2 float-end">
           <ul>
             <h2>Ár: {{Number(row.egysegArNetto * (1 + AFA)).toLocaleString()}} Ft</h2>
             <li class="">Leiras: {{row.leiras}}</li>
