@@ -32,7 +32,6 @@
                         Kötelező!
                     </div>
                 </div>
-
                 <button class="btn my-3" @click.prevent="onClickLogin">
                     Bejeletkezés
                 </button>
@@ -71,9 +70,6 @@ export default {
             }
         },
         loginUser(){
-            // console.log(this.queryLogin);
-            // console.log(this.email);
-            // console.log(this.password);
             let params = {
                 query: this.queryLogin,
                 email: this.email,
@@ -85,10 +81,6 @@ export default {
                 console.log(res.data);
                 this.$root.$data.loginAccessLevel = res.data.loginAccessLevel;
                 this.$root.$data.loginUserName = res.data.loginUserName;
-                console.log(this.$root.$data.loginUserName);
-                console.log(this.$root.$data.loginAccessLevel);
-                console.log(res.data.loginAccessLevel);
-                this.$router.push({ name: "termekekSzures" });
             })
             .catch((error) => {
                 console.log(error);
